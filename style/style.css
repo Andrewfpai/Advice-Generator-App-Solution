@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Manrope:wght@800&family=Orbitron:wght@500&family=Short+Stack&family=Volkhov&display=swap");
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  --Blue: hsl(228, 45%, 44%);
+  --Manrope: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  font-family: var(--Manrope);
+  background-color: var(--DarkBlue);
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  margin-top: -20px;
+  width: 420px;
+  height: 220px;
+  background-color: var(--DarkGrayishBlue);
+  padding: 35px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advice {
+  color: var(--NeonGreen);
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.quote-wrapper {
+  margin-bottom: 20px;
+  color: var(--LightCyan);
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.quote_id {
+  margin-left: 7px;
+}
+
+.desktop-img {
+  width: 26em;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.dice-wrapper {
+  background-color: var(--NeonGreen);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 70%;
+  position: absolute;
+}
+
+.dice-wrapper:hover {
+  -webkit-box-shadow: 0 0 30px var(--NeonGreen);
+          box-shadow: 0 0 30px var(--NeonGreen);
+  cursor: pointer;
+}
+
+.dice-img {
+  position: relative;
+  margin-top: 12px;
+}
+
+.attribution {
+  bottom: 0;
+  position: absolute;
+  color: white;
+}
+
+.attribution a {
+  color: var(--NeonGreen);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .box {
+    margin-left: 0px;
+    width: 270px;
+    height: 240px;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .dice-wrapper {
+    top: 72%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
